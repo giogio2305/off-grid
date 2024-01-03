@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"
+    type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offgrid section</title>
+</head>
+<body>
+    <div class="grid">
+    </div>
+    <h4 class="st">Introducing Off-Grid Spotlight</h4>
+    <h1 class="bt">Get your work in front of thousands of creatives.</h1>
+
+    
+    <div class="bb">
+        Get started  &rarr;
+        <div class="bb-bg">Get started  &rarr;</div>
+    </div>
+
+    <p class="pr">
+        Warning: Spotlighting your work , products or services on Off-Grid might result in an overload of new followers, clients, and job applications. Please proceed with caution
+    </p>
+    <script>
+        $(document).ready(function(){
+    $(".bb").hover(function(){
+        $(this).parent(this).css({ 'background-color': '#ff4800', 'color': '#fff' });
+        $(".pr, .st").css('color','#f7f7f7');
+        $(".grid").css('visibility','visible');
+
+    });
+
+    $(".bb").mouseleave(function(){
+        $(this).parent(this).css('background-color','#000');
+        $(".st").css('color','#ff4800');
+        $(".pr").css('color','#808080');
+        $(".grid").css('visibility','hidden');
+    });
+})
+    </script>
+</body>
+</html>
